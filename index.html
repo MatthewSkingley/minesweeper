@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+	#dispContainer {
+		height: 100%;
+		float: right;
+		margin-right: 50%;
+	}
+
+	.dispBox {
+		width: 14px;
+		height: 14px;
+		float: left;
+		margin: 1px;
+		border: solid gray 1px;
+	}
+
+	minefield-box {
+		width: 14px;
+		height: 14px;
+		float: left;
+		margin: 1px;
+		border: solid gray 1px;
+	}
+
+	#container {
+		float: left;
+	}
+</style>
+<script type="text/javascript" src="script.js" charset="utf-8"></script>
 <head>
 	<title>Minesweeper Alpha</title>
 </head>
-<body>
-Hello World!
+<body onload="setup(8, 8)">
+	<p>Minesweeper is below</p><br/>
+	<div id="container"></div>
+	<div id="dispContainer"></div>
 </body>
 </html>
