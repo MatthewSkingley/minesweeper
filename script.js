@@ -110,17 +110,17 @@ function createArray(width, height) {
 }
 
 function printArray() {
-	var dispContainer = document.getElementById("dispContainer");
+	// var dispContainer = document.getElementById("dispContainer");
 	var container = document.getElementById("container");
 	Window.a.forEach(function(row){
 		console.log(row);
 		row.forEach(function(cell){
-			dispContainer.appendChild(dispBox(cell));
+			// dispContainer.appendChild(dispBox(cell));
 			box = new Box(cell);
 			container.appendChild(box);
 			box.initialise();
 		});
-		dispContainer.appendChild(document.createElement("br"));
+		// dispContainer.appendChild(document.createElement("br"));
 		container.appendChild(document.createElement("br"));
 	});
 }
